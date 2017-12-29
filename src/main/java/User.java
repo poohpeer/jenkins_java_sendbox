@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class User {
 
-    Logger logger = LoggerFactory.getLogger(User.class);
+    private Logger logger = LoggerFactory.getLogger(User.class);
     private String firstName;
     private String lastName;
 

@@ -10,14 +10,20 @@ public class basicTest {
 
     Logger logger = LoggerFactory.getLogger(User.class);
 
+    private long start;
+
     @Before
-    public void before(){
+    public void before() throws InterruptedException {
         logger.info("Starting test");
+        start = System.currentTimeMillis();
+        Thread.sleep(10);
     }
 
     @After
-    public void after(){
+    public void after() throws InterruptedException {
         logger.info("Done.");
+        Thread.sleep(10);
+        logger.info("Took: " + (System.currentTimeMillis() - start) + " ms.");
     }
 
     @Test
