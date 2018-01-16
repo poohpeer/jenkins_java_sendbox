@@ -32,6 +32,7 @@ public class basicTest {
         String expSurname = "Poohpeer";
         User userA = new User(expName, expSurname);
         User userB = new User(expName, expSurname);
+        System.out.println("");
         assertEquals("It's pizdetz! Users arn't equal", userA, userB);
     }
 
