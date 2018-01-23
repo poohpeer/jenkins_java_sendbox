@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('BuildProject') {
       steps {
         build 'Bash_runner'
       }
