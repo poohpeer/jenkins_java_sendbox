@@ -1,5 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +37,7 @@ public class basicTest {
     }
 
     @Test
+    @Ignore("Zakomitil")
     public void negativeTest(){
         User userA = new User("Puper", "Shmuper");
         User userB = new User("Shchult", "Huyultz");
