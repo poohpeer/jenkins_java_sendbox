@@ -18,7 +18,7 @@ pipeline {
             sh 'echo "Hello world #1"'
           }
         }
-        stage('') {
+        stage('MyMessage') {
           steps {
             echo 'A cool message'
           }
