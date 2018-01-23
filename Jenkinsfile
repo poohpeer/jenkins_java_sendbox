@@ -11,18 +11,17 @@ pipeline {
         build 'mvn'
       }
     }
-    stage('OneMore') {
-      parallel {
-        stage('OneMore') {
-          steps {
-            sh 'echo "Hello world #1"'
-          }
+    stage('CheckJava') {
+      steps {
+        waitUntil() {
+          build 'mvn'
         }
-        stage('MyMessage') {
-          steps {
-            echo 'A cool message'
-          }
-        }
+        
+      }
+    }
+    stage('Messages') {
+      steps {
+        echo 'XYU'
       }
     }
   }
