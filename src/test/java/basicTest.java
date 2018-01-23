@@ -36,11 +36,11 @@ public class basicTest {
         assertEquals("It's pizdetz! Users arn't equal", userA, userB);
     }
 
-    @Test
-    @Ignore("Ignore Failing Test ")
-    public void negativeTest(){
-        User userA = new User("Puper", "Shmuper");
-        User userB = new User("Shchult", "Huyultz");
-        assertEquals("Bad!!! Users arn't equal!", userA, userB);
-    }
+//    @Test
+//    @Ignore("Ignore Failing Test ")
+//    public void negativeTest(){
+//        User userA = new User("Puper", "Shmuper");
+//        User userB = new User("Shchult", "Huyultz");
+//        assertEquals("Bad!!! Users arn't equal!", userA, userB);
+//    }
 }
