@@ -37,7 +37,7 @@ public class basicTest {
     }
 
     @Test
-    @Ignore("Ignore Failing Test")
+    @Ignore("Ignore Failing Test ")
     public void negativeTest(){
         User userA = new User("Puper", "Shmuper");
         User userB = new User("Shchult", "Huyultz");
