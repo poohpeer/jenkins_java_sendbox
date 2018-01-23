@@ -11,6 +11,20 @@ pipeline {
         build 'mvn'
       }
     }
+    stage('OneMore') {
+      parallel {
+        stage('OneMore') {
+          steps {
+            sh 'echo "Hello world #1"'
+          }
+        }
+        stage('') {
+          steps {
+            echo 'A cool message'
+          }
+        }
+      }
+    }
   }
   environment {
     Windows = 'Govno'
