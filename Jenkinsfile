@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         build 'Bash_runner'
+      }
+    }
+    stage('TestJava') {
+      steps {
+        build 'mvn'
       }
     }
   }
